@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Downloader</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Premium YouTube Downloader</h1>
+    <input type="text" id="url" placeholder="Paste YouTube URL here" />
+    <select id="format">
+      <option value="mp4">MP4 (Video)</option>
+      <option value="mp3">Audio (Best Quality)</option> 
+    </select>
+    <button id="download">Download</button>
+    <p id="status"></p>
+    <div class="footer">Made by Prashan</div>
+  </div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
